@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Login Page </title>
-  </head>
-  <body>
-    <h1>로그인 </h1>
-    <p>
-      ID <input type="text" name="" value="">
-    </p>
-    <p>
-      PW <input type="text" name="" value="">
-    </p>
 
-    <button type="button">로그인</button>
-    <button type="button">아이디/비밀번호 찾기</button>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Login Page </title>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid #bcbcbc;
+    }
+
+    table {
+      position: absolute;
+      /* 테이블 상하좌우 조정 */
+      left: 600px;
+      top: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td colspan="3" align=center bgcolor="">
+        <b>
+          <font size=6>Login</font>
+        </b>
+      </td>
+    </tr>
+    <tr>
+      <td>아이디 : </td>
+      <td><input type="text" name="id"></td>
+    </tr>
+    <tr>
+      <td>비밀번호 : </td>
+      <td><input type="password" name="pass"></td>
+    </tr>
+    <tr>
+      <td colspan="3" align=center>
+        <input type="button" value="로그인">
+        <!-- 로그인버튼 추후 type 변경 예정 -->
+        <input type="button" value="아이디/비밀번호 찾기">
+        <!-- 회원 정보 찾기 type 추후 변경 예정 -->
+        <a href="UserInfo.html">회원가입</a>
+        <!-- a테그 이동후 회원가입 -->
+      </td>
+    </tr>
+  </table>
+
+</body>
+
 </html>
